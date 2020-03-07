@@ -13,6 +13,7 @@ class ItemDetail extends AbstractModel
         'part',
         'style',
         'color',
+        'width',
         'gemstone',
         'layer',
         'pieces',

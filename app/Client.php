@@ -27,6 +27,16 @@ class Client extends AbstractModel
         return $this->hasMany('App\Order');
     }
 
+    public function finishedOrders()
+    {
+        return $this->hasMany('App\Order')->whereStatus('paid')->orderBy('delivery_date', 'DESC');
+    }
+
+    public function company()
+    {
+        return $this->belongsTo('App\Company');
+    }
+
     public function items()
     {
         return $this->hasMany('App\OrderItem');

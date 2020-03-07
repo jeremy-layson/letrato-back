@@ -23,6 +23,12 @@ class OrderItem extends AbstractModel
         'order_id',
         'company_id',
         'client_id',
+        'centerpiece',
+        'centerpiece_note',
+        'necklace',
+        'necklace_note',
+        'item_note',
+        'logo'
     ];
 
     protected $appends = [
